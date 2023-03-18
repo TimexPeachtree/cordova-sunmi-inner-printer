@@ -17,7 +17,7 @@
       </feature>
     </config-file>
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <receiver android:name="com.sunmi.innerprinter.PrinterStatusReceiver" android:enabled="true">
+      <receiver android:name="com.sunmi.innerprinter.PrinterStatusReceiver" android:enabled="true" android:exported="false">
         <intent-filter android:priority="1000">
           <action android:name="woyou.aidlservice.jiuv5.OUT_OF_PAPER_ACTION" />
           <action android:name="woyou.aidlservice.jiuv5.ERROR_ACTION" />
